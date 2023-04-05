@@ -15,11 +15,12 @@ class Triangle {
     }
 
     get area() {
-        const perimetro = this.segmentA + this.segmentB + this.segmentC;
+        const perimetro = this.segmentA.length + this.segmentB.length + this.segmentC.length;
         const sP = perimetro / 2
-        const resultA = sP - this.segmentA;
-        const resultB = sP - this.segmentB;
-        const resultC = sP - this.segmentC;
+        const resultA = sP - this.segmentA.length;
+        const resultB = sP - this.segmentB.length;
+        const resultC = sP - this.segmentC.length;
+        console.log(perimetro);
 
         const resultPippo = sP * resultA * resultB * resultC
         const resultFinale = Math.sqrt((resultPippo))

@@ -20,8 +20,8 @@ const point4 = new Point(3, 1);
 const point5 = new Point(3, 1);
 const point6 = new Point(1, 1);
 
-const triangle = Triangle.fromSegmentCoordinates(point1,point2,point3,point5,point6)
+const triangle1 = Triangle.fromSegmentCoordinates(point1,point2,point3,point4,point5,point6)
 
 // (1, 1, 1, 3, 1, 3, 3, 1, 3, 1, 1, 1)
 
-console.log(Triangle.area);
+console.log(triangle1.area);
